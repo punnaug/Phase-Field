@@ -1,0 +1,681 @@
+//Punn Augsornworawat
+//Phase Field Model: Model_C
+
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+
+double randgen();
+//int imageconc();
+//int writefile();
+
+void main()
+{
+printf("Welcome to Phase Field Model. This Program Implements Model C. \nCode by Punn Augsornworawat\n\n");
+//PARAMETERS--------------------------------------------------------------------------------------------------------------------------------------
+
+	//adjustable/main parameters
+	double mpsi, mconc, r, a,b,w,deltat,kappaconc,kappapsi,alpha,beta,dtt,dx;
+	double temp, cm;
+	//space matrix paraters
+	int ni, nj, nt;
+	//constants
+	double kb = 0.010, pi = M_PI, lapl_pref = 2.0/3.0;
+	//other parameters or variables
+	double dx2, invdx2,c_noise;
+	double sum=0, sum1=0, sum2=0, sum3=0, sum4=0, sum5=0, sum6=0, totalarrays;
+  int i, j, tloop, aup,adown,aleft,aright,aup2,adown2,aleft2,aright2;
+	double d,noise_corr;
+	double corr_conc, lapl_conc_cubed, lapl_conc, dub_lapl_conc, ppconc,corr_psi , euler, pppsi; //microstructural evolution parameters
+	//random variable set up
+	double ranr1, ranr2, ranr3, ranr4;
+	time_t t;
+	srand((unsigned) time(&t));
+	//finishing variables
+	double percentage, percentagev=10;
+
+	//Assigning values to parameters
+	int input1,input2;
+	printf("\nPlease select the method of defining parameters:\n[1] Use Default Parameters\n[2] Read Parameters From File\nInput:");
+
+	while (1){
+		scanf("%d",&input1);
+		if (input1 == 1){
+		//Default Parameters
+			mpsi = 0.6;
+			mconc = 1.0;
+			r = 1.0;
+			a = 1.0;
+			b = 1.0;
+			w = 0.0;
+			deltat = -0.4;
+			kappaconc = 1.0;
+			kappapsi = 0.125;
+			alpha = 0.15;
+			beta = 0.15;
+			dtt = 0.05;
+			dx = 1.3;
+			break;
+		}
+		else if (input1 == 2){
+
+		//reading parameters from file
+			FILE *readfile;
+			char my_filename[] = "variables.txt";
+			readfile = fopen (my_filename, "r");
+			fscanf (readfile, "%lf\tmpsi\n%lf\tmconc\n%lf\tr\n%lf\ta\n%lf\tb\n%lf\tw\n%lf\tdeltat\n%lf\tkappaconc\n%lf\tkappapsi\n%lf\talpha\n%lf\tbeta\n%lf\tdtt\n%lf\tdx",&mpsi,&mconc, &r, &a, &b, &w, &deltat, &kappaconc, &kappapsi, &alpha, &beta, &dtt, &dx);
+			fclose (readfile);
+			break;
+		}
+		printf("invalid input . . . Please try again\nInput:");
+	}
+		//parameter check
+				printf("\nPhase field model_C parameters are as follow: \nmpsi mconc r a b w deltat kappaconc kappapsi alpha beta dtt dx \n");
+				printf("%1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f %1.3f \n", mpsi, mconc, r, a, b, w, deltat, kappaconc, kappapsi, alpha, beta, dtt, dx);
+		//parameter adjusment ends here
+
+		//determine nt - time steps - number of times to run simulation
+		printf("\nInput Number Time Steps(nt) for the Simulation:");
+			while (1){
+			scanf("%d",&nt);
+			if (nt >= 1){
+				break;
+			}
+			printf("Invalid input . . . Please try again\nInput Number Time Steps(nt) for the Simulation:");
+			}
+
+		//Calcuated factors/constants
+		temp = 1.0; //Placeholder temp in arb units
+		cm = 2.0; //mobility in arb units
+		dx2 = pow(dx,2.0);
+		invdx2 = 1/dx2;
+		c_noise = sqrt(2.0*kb*temp*cm*dtt*invdx2); //noise prefactor
+
+		//setting up predefined space
+		ni = 200; //row axis dimension in pixels (space size)
+		nj = 200; //column axis dimension in pixels (space size)
+
+		totalarrays = (double)ni*(double)nj;
+
+  //Defining Prealllocated space --!!!!!!!!!!cannot incorporate ni and nj when defining variables
+
+	//non conservered parameter
+	static double npsi[200][200], noise[200][200], nnoise[200][200];
+	static double nnoisec[200][200], psi[200][200];
+
+	//conserved parameter
+	static double conc[200][200], nconc[200][200];
+	static double noise1[200][200], noise2[200][200];
+	static double noisec1[200][200],noisec2[200][200];
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
+//INITIAL CONDITION SET UP-------------------------------------------------------------------------------------------------------------------------------
+
+  //setting up the initial space, psi and conc >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	for (i = 0; i<ni; i++)
+	{
+
+		for (j = 0; j<nj; j++)
+		{
+			ranr1 = randgen();
+			ranr2 = randgen();
+			ranr3 = randgen();
+			ranr4 = randgen();
+			//generating random concentration using gaussian distribution
+			//conc[i][j] = cos(2*pi*ranr1)*sin(2*pi*ranr2);
+
+			//generating random concentration lower than 0.05
+			conc[i][j] = 0.0 - 0.5*ranr1 + 0.5*ranr2;
+
+			//uniform concentration
+			//conc[i][j] = 0.05; //setting concentration to be uniform at 0.05
+
+			//==========================================
+
+			//in the paper the suggest initial conditions starting with psi= -1 + noise<=|0.1|
+
+			//generating random psi by gaussian around -0.5
+			//psi[i][j] = -0.5 + cos(2*pi*ranr3)*sin(2*pi*ranr4)/2.0;
+
+			//generating psi based on litereature pg. 6709 2nd paragraph on left
+			psi[i][j] = -1 + (-0.1 + 0.2*ranr3);
+
+			//uniform psi/ phase
+			//psi[i][j] = -0.8;
+	  }
+	}
+
+
+	//initial noise set up (commented by default)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+		 for (i = 0; i<ni; i++)
+		 {
+			 for (j = 0; j<nj; j++)
+			 {
+						 ranr1 = randgen();
+						 ranr2 = randgen();
+						noise1[i][j] = c_noise * sqrt(-2.0 * log(ranr1)) * sin(2 * pi * ranr2);
+						noise2[i][j] = c_noise * sqrt(-2.0 * log(ranr1)) * cos(2 * pi * ranr2);
+			 }
+		 }
+
+
+	//SEED GENERATION>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//sinusoidal seed generation (commented by default)
+/*
+		 for(i=0;i<ni;i++)
+			{
+				for (j=0;j<nj;j++)
+				{
+					d = 5.0*sin(j/5) +80.;
+
+					if (i>d)
+					{
+						psi[i][j] = 1.00;
+						conc[i][j] = 1.00;
+					}
+					else if ( i > (d-2))
+					{
+						psi[i][j] = 0.75;
+						conc[i][j] = 0.75;
+					}
+					else if (i > (d-4))
+					{
+            psi[i][j]=0.50;
+						conc[i][j]=0.50;
+					}
+          else if (i > (d-6))
+					{
+             psi[i][j]=0.25;
+             conc[i][j] =0.25;
+					}
+          else if (i > (d-8))
+					{
+						 psi[i][j]=0.00;
+             conc[i][j]=0.10;
+					}
+          else if (i > (d-10))
+					{
+             psi[i][j]=-0.25;
+					}
+          else if (i > (d-12))
+					{
+             psi[i][j]=-0.50;
+					}
+					else if (i > (d-14))
+					{
+             psi[i][j]=-0.75;
+					}
+				}
+
+			}
+*/
+
+		 //Radial centered seed generation    (BY DEFAULT THIS IS ON OR NOT COMMENTED)
+
+/*		 for (i=0; i<ni; i++)
+		 {
+			 for (j=0; j<nj; j++)
+			 {
+				 d = sqrt(pow((i - (ni/2)),2) + pow((j - (nj/2)),2)) - 10;
+				 psi[i][j]= -tanh(d);
+				 if (psi[i][j]>=0.5){
+					 conc[i][j]=0.8;
+				 }
+				 else if (psi[i][j]>=0.05){
+				 conc[i][j]=psi[i][j];
+				 }
+			 }
+		 }
+*/
+
+	//Numerical sum of initial conditions>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		 for(i=0;i<ni;i++)
+			{
+			for(j=0;j<nj;j++)
+				{
+				sum = sum + psi[i][j];
+				sum4 = sum4 + noise[i][j];
+				sum6 = sum6 + conc[i][j];
+			  }
+		  }
+	 	  printf("\nInitial sum of psi:   %f\n", sum);
+			printf("Initial sum of noise: %f\n", sum4);
+			printf("Initial sum of conc:  %f\n", sum6);
+			printf("\nInitial average psi:   %f\n", sum/totalarrays);
+			printf("Initial average of noise: %f\n", sum4/totalarrays);
+			printf("Initial average of conc:  %f\n\n", sum6/totalarrays);
+
+			printf("Number of time step:  %d\n\n", nt);
+
+			printf("0%c %c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c 100%c\n   ",37,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,176,37);
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//MICROSTRUCTUAL EVOLUTION -----------------------------------------------------------------------------------------------------
+	for (tloop = 1;tloop<=nt;tloop++)
+	{
+		//noise term calculation
+		for (i=0;i<ni;i++)
+		{
+			for (j=0;j<nj;j++)
+			{
+				ranr1 = randgen();
+				ranr2 = randgen();
+				noise_corr = pow((1-pow(psi[i][j],2)),2);
+				//limiting noise in the liquid/solid to interface of seed
+				noise1[i][j] = c_noise*sqrt(-2*log(ranr1))*sin(2*pi*ranr2)*noise_corr;
+		  	noise2[i][j] = c_noise*sqrt(-2*log(ranr1))*cos(2*pi*ranr2)*noise_corr;
+
+				//limits nosie in concentration to liquid state
+				if (psi[i][j]<0)
+				{
+					noisec1[i][j] = (c_noise * sqrt(-2.0 * log(ranr1)) * sin(2*pi*ranr2));
+					noisec2[i][j] = (c_noise * sqrt(-2.0 * log(ranr1)) * cos(2*pi*ranr2));
+				}
+				else
+				{
+					noisec1[i][j] = noise1[i][j];
+					noisec2[i][j] = noise2[i][j];
+				}
+				//for stability, hard limits iposed on noise terms; base on typucal noise values obstained
+				if (noise1[i][j]>0.04)
+				{
+					noise1[i][j] = 0.04;
+				}
+				else if (noise1[i][j]<-0.04)
+				{
+					noise1[i][j] = -0.04;
+				}
+
+				if (noise2[i][j]>0.04)
+				{
+					noise2[i][j] = 0.04;
+				}
+				else if (noise2[i][j]<-0.04)
+				{
+					noise2[i][j] = -0.04;
+				}
+
+				if (noisec1[i][j]>0.04)
+				{
+					noisec1[i][j] = 0.04;
+				}
+				else if (noisec1[i][j]<-0.04)
+				{
+					noisec1[i][j] = -0.04;
+				}
+
+				if (noisec2[i][j]>0.04)
+				{
+					noisec2[i][j] = 0.04;
+				}
+				else if (noisec2[i][j]<-0.04)
+				{
+					noisec2[i][j] = -0.04;
+				}
+			}
+		}
+
+		for (i=0; i<ni;i++)
+		{
+			for(j=0; j<nj; j++)
+			{
+				//Boundary conditions = aup for array above current position , aup2 are 2 units above current position i,j
+					aup = (i+ni-2)%ni +1;
+						if (aup==nj){aup=0;}
+					adown = i%ni + 1;
+						if (adown==nj){adown=0;}
+					aleft = (j+nj-2)%nj + 1;
+						if (aleft==ni){aleft=0;}
+					aright = j%nj + 1;
+						if (aright==ni){aright=0;}
+					aup2 = (aup+ni-2)%ni +1;
+						if (aup2==nj){aup=0;}
+					adown2 = adown%ni + 1;
+						if (adown2==nj){adown=0;}
+					aleft2 = (aleft+nj-2)%nj + 1;
+						if (aleft2==ni){aleft=0;}
+					aright2 = aright%nj + 1;
+						if (aright2==ni){aright=0;}
+
+				//conc calculations
+					//Nearest neighbor of noise term
+					nnoise[i][j] = lapl_pref*(0.25*(noise1[aup][aleft] + noise1[adown][aright] + noise2[aup][aright] + noise2[adown][aleft]) + (noise1[aup][j] + noise1[adown][j] + noise2[i][aright] + noise2[i][aleft]) - 2.5*(noise1[i][j]+noise2[i][j]));
+					nnoisec[i][j] = lapl_pref*(0.25*(noisec1[aup][aleft] + noisec1[adown][aright] + noisec2[aup][aright] + noisec2[adown][aleft]) + (noisec1[aup][j] + noisec1[adown][j] + noisec2[i][aright] + noisec2[i][aleft]) - 2.5*(noisec1[i][j]+noisec2[i][j]));
+					//correlation term for concentration equation
+					corr_conc = -2.0*beta*lapl_pref*(0.25*(conc[aup][aleft]*psi[aup][aleft] + conc[aup][aright]*psi[aup][aright] + conc[adown][aleft]*psi[adown][aleft] + conc[adown][aright]*psi[adown][aright]) + (conc[i][aleft]*psi[i][aleft] + conc[i][aright]*psi[i][aright] + conc[aup][j]*psi[aup][j] + conc[adown][j]*psi[adown][j]) - 5*conc[i][j]*psi[i][j]);
+					//calculation of laplacian of concentration field cubed
+					lapl_conc_cubed = lapl_pref*(0.25*(pow(conc[aup][aleft],3) + pow(conc[aup][aright],3) + pow(conc[adown][aleft],3) + pow(conc[adown][aright],3)) + (pow(conc[i][aleft],3) + pow(conc[i][aright],3) + pow(conc[aup][j],3) + pow(conc[adown][j],3)) - 5*pow(conc[i][j],3));
+					//calculation of laplacian of concentration field
+					lapl_conc = lapl_pref*(0.25*(conc[aup][aleft]+conc[aup][aright]+conc[adown][aleft]+conc[adown][aright])+(conc[i][aleft]+conc[i][aright]+conc[aup][j]+conc[adown][j])-5*conc[i][j]);
+					//double laplacian of concetration field
+					dub_lapl_conc = pow(lapl_pref,2)*(29.25*conc[i][j]-9*(conc[i][aleft]+conc[i][aright]+conc[adown][j]+conc[aup][j])-0.5*(conc[aup][aleft]+conc[aup][aright]+conc[adown][aleft]+conc[adown][aright])+1.125*(conc[i][aleft2]+conc[i][aright2]+conc[aup2][j]+conc[adown2][j])+0.0625*(conc[aup2][aleft2]+conc[aup2][aright2]+conc[adown2][aleft2]+conc[adown2][aright2])+0.5*(conc[aup2][aleft]+conc[aup2][aright]+conc[adown2][aleft]+conc[adown2][aright]+conc[aup][aleft2]+conc[aup][aright2]+conc[adown][aleft2]+conc[adown][aright2]));
+					//equation 14
+					ppconc = (mconc*dtt*invdx2)*(w*(lapl_conc)+corr_conc+b*(lapl_conc_cubed)-(kappaconc*invdx2)*(dub_lapl_conc))+2*nnoisec[i][j];
+
+				//psi calculations based on 9-point laplacian
+					//correlation term for psi calculation
+					corr_psi=1.0*beta*(pow(conc[i][j],2)-alpha*deltat);
+					//euler method
+					euler=lapl_pref*(0.25*(psi[aup][aleft]+psi[aup][aright]+psi[adown][aleft]+psi[adown][aright])+(psi[i][aright]+psi[i][aleft]+psi[aup][j]+psi[adown][j])-5*psi[i][j]);
+					//equation 13
+					pppsi=mpsi*dtt*(r*psi[i][j]-a*pow(psi[i][j],3)+corr_psi+(kappapsi*invdx2)*euler)+nnoise[i][j];
+
+				//npsi and nconc array update - addition
+				npsi[i][j] = psi[i][j]+pppsi;
+				nconc[i][j] =conc[i][j]+ppconc;
+
+				//sum of all noise values in arrays
+				sum1=sum1+nnoise[i][j];
+
+
+//debugging simulation blow up check
+//printf("lapl_conc_cubed: %f\n", lapl_conc_cubed);
+
+
+			}
+		}
+		//sum of cumulative noise for all runs
+		sum2=sum2+sum1;
+
+		//assigning calculated npsi to psi and nconc to conc
+		for(i=0;i<ni;i++)
+		{
+			for(j=0;j<nj;j++)
+			{
+									/*
+									//force npsi over 1 to be 1 and under -1 to be -1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ADDED
+									if(npsi[i][j]>1.0)
+									{
+										npsi[i][j]= 1.0;
+									}
+									if(npsi[i][j]<-1.0)
+									{
+										npsi[i][j]= -1.0;
+									}
+									*/
+
+				psi[i][j]=npsi[i][j];
+				conc[i][j]=nconc[i][j];
+			}
+		}
+
+		//image generation goes here from matlab version--------------------------------------
+
+			//slow cooling image generation here but disregared in this code
+			//---------------------------------------------------------
+		//----------------------------------------------------------------------------
+
+		//print progress in percentage
+		percentage = trunc(100*(double)tloop/(double)nt);
+		if (percentage == percentagev)
+		{
+			printf("%c",219);
+			percentagev = percentagev +2;
+		}
+
+
+	}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+	//numerical sum of final conditions and print out
+	for(i=0;i<ni;i++)
+		{
+			for(j=0;j<nj;j++)
+			{
+				sum3 = sum3 + psi[i][j];
+				sum5 = sum5 + conc[i][j];
+			}
+		}
+		printf("\n\n\nFinal sum of psi:   %f\n", sum3);
+		printf("Final sum of noise: %f\n", sum2);
+		printf("Final sum of conc:  %f\n", sum5);
+		printf("\nFinal average of psi:   %f\n", sum3/totalarrays);
+		printf("Final average of noise: %f\n", sum2/totalarrays);
+		printf("Final average of conc:  %f\n\n", sum5/totalarrays);
+
+	//generate final DATA file HERE ----------------------------
+	//writefile(); //writefile
+											 FILE * writtenfile1;
+											 FILE * writtenfile2;
+
+										 writtenfile1 = fopen ("finalconc.txt", "w");
+										 writtenfile2 = fopen ("finalpsi.txt", "w");
+											for(i=0;i<ni;i++)
+											{
+												for(j=0;j<nj;j++)
+												{
+													fprintf(writtenfile1, "%f\t",conc[i][j]);
+													fprintf(writtenfile2, "%f\t",psi[i][j]);
+												}
+													fprintf(writtenfile1,"\n");
+												  fprintf(writtenfile2,"\n");
+											}
+										 fclose(writtenfile1);
+										 fclose(writtenfile2);
+	//generate file of conditions - LOG FILES
+											FILE * writtenfile3;
+											writtenfile3 = fopen ("log.txt", "a");
+													fprintf(writtenfile3, "//Date of run: %s", ctime(&t));
+													fprintf(writtenfile3, "Parameters:\nnmpsi\tmconc\tr\ta\tb\tw\tdeltat\tkapconc\tkappsi\talpha\tbeta\tdtt\tdx\n");
+													fprintf(writtenfile3, "%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\t%1.3f\n", mpsi, mconc, r, a, b, w, deltat, kappaconc, kappapsi, alpha, beta, dtt, dx);
+													fprintf(writtenfile3, "Number of time steps(nt): %d\n", nt);
+													fprintf(writtenfile3, "Final average of psi:   %f\n", sum3/totalarrays);
+													fprintf(writtenfile3, "Final average of noise: %f\n", sum2/totalarrays);
+													fprintf(writtenfile3, "Final average of conc:  %f\n\n", sum5/totalarrays);
+											fclose(writtenfile3);
+
+	//-------------------------------------------------------------------
+
+																																	//image generator in grayscale //NOTE ABOUT ARRAY STARTING AT 0 NOT 1 , MAY NEED TO ALTER WHOLE CODE
+																																		int imageconc[200][200][3],imagepsi[200][200][3], imagetemp,k;
+																																		double normalizedconc[200][200], normalizedpsi[200][200];
+
+
+
+																																		FILE* imagefile1 = fopen("imageconc.ppm", "w" );
+																																		FILE* imagefile2 = fopen("imagepsi.ppm", "w");
+																																								fprintf(imagefile1,"P3\n#imageconc.ppm\n%d %d\n", ni, nj);
+																																								fprintf(imagefile1,"%d\n",255);
+
+																																								fprintf(imagefile2,"P3\n#imagepsi.ppm\n%d %d\n", ni, nj);
+																																								fprintf(imagefile2,"%d\n",255);
+
+																																												for (i=0; i<=ni-1;i++)
+																																												{
+																																													for (j=0; j<=nj-1; j++)
+																																													{
+																																														for (k=0; k <=2; k++)
+																																														{
+																																																normalizedconc[i][j] = (nconc[i][j]+1)*255/2; //normalizing values
+																																																imageconc[i][j][k] = (int)trunc(normalizedconc[i][j]);
+																																																	imagetemp = imageconc[i][j][k];
+																																																	if(imagetemp>250){imagetemp = 250;}
+																																																	if(imagetemp<0){imagetemp = 0;}
+																																																	if (imagetemp <= 65)//color jet - sequence is blue green red
+																																																	{
+																																																		imageconc[i][j][1] = imagetemp*255/65;//green
+																																																		imageconc[i][j][0] = 0;//red
+																																																		imageconc[i][j][2] = 255; //blue
+																																																	}
+																																																	if (imagetemp >65 && imagetemp<= 117)
+																																																	{
+																																																		imageconc[i][j][2] = -255/52*imagetemp+578;//blue
+																																																		imageconc[i][j][0] = 0;//red
+																																																		imageconc[i][j][1] = 255; //green
+																																																	}
+																																																	if (imagetemp >117 && imagetemp< 170)
+																																																	{
+																																																		imageconc[i][j][2] = 255/51*imagetemp-590;//blue
+																																																		imageconc[i][j][0] = 255;//red
+																																																		imageconc[i][j][1] = 0; //green
+																																																	}
+																																																	if (imagetemp >= 170)
+																																																	{
+																																																		imageconc[i][j][2] = 0;//blue
+																																																		imageconc[i][j][1] = 765-255/85*imagetemp;//green
+																																																		imageconc[i][j][0] = 255; //red
+																																																	}
+																																																fprintf(imagefile1, "%d ", imageconc[i][j][k]);
+
+
+																																																normalizedpsi[i][j] = (npsi[i][j]+1)*255/2; //normalizing values
+																																																imagepsi[i][j][k] = (int)trunc(normalizedpsi[i][j]);
+																																																	imagetemp = imagepsi[i][j][k];
+																																																	if(imagetemp>250){imagetemp = 250;}
+																																																	if(imagetemp<0){imagetemp = 0;}
+																																																	if (imagetemp <= 65)//color jet
+																																																	{
+																																																		imagepsi[i][j][1] = imagetemp*255/65;//green
+																																																		imagepsi[i][j][0] = 0;//red
+																																																		imagepsi[i][j][2] = 255; //blue
+																																																	}
+																																																	if (imagetemp >65 && imagetemp<= 117)
+																																																	{
+																																																		imagepsi[i][j][2] = -255/52*imagetemp+578;//blue
+																																																		imagepsi[i][j][0] = 0;//red
+																																																		imagepsi[i][j][1] = 255; //green
+																																																	}
+																																																	if (imagetemp >117 && imagetemp< 170)
+																																																	{
+																																																		imagepsi[i][j][2] = 255/51*imagetemp-590;//blue
+																																																		imagepsi[i][j][0] = 255;//red
+																																																		imagepsi[i][j][1] = 0; //green
+																																																	}
+																																																	if (imagetemp >= 170)
+																																																	{
+																																																		imagepsi[i][j][2] = 0;//blue
+																																																		imagepsi[i][j][1] = 765-255/85*imagetemp;//green
+																																																		imagepsi[i][j][0] = 255; //red
+																																																	}
+																																																fprintf(imagefile2, "%d ", imagepsi[i][j][k]);
+
+																																														}
+																																																fprintf(imagefile1, "\n");
+
+																																																fprintf(imagefile2, "\n");
+																																													}
+																																												}
+																																												//printf("\nimage generator complete. . .\n");
+																																		fclose(imagefile1);
+																																		fclose(imagefile2);
+
+																																		//image generator ends here
+//UNFINISHED HERE
+
+
+/*
+
+//test coding check
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------
+	//print psi in output
+
+printf("\n\nPsi Matrix:\n ");
+	for (i=0;i<ni;i++)
+	{
+		for (j=0;j<nj;j++)
+		{
+		printf("%1.1f ",psi[i][j]);
+		}
+		printf("\n");
+	}
+
+		//print conc in output
+printf("\n\nConc Matrix:\n ");
+	for (i=0;i<ni;i++)
+	{
+		for (j=0;j<nj;j++)
+		{
+		printf("%1.1f ",conc[i][j]);
+		}
+		printf("\n");
+	}
+//-------------------------
+*/
+printf("\nSimulation Completed\n\nThe data file have been saved to the directory folder.\n");
+printf("\n\nPress any button to close . . . .\n ");
+
+getch();
+}
+
+
+
+
+double randgen()
+{
+double randomx;
+
+	randomx = (double)rand()/(double)RAND_MAX;
+
+	return randomx;
+
+
+}
+
+/*
+int writefile()
+{
+	   FILE * writtenfile;
+
+   writtenfile = fopen ("finalconc.txt", "wb");
+		int i,j;
+		int nj=100,ni=100; //cannot use global variables
+		for(i=0;i<ni;i++)
+		{
+			for(j=0;j<nj;j++)
+			{
+				fprintf(writtenfile, "%f",conc[i][j]);
+			}
+				fprintf(writtenfile, "\n");
+		}
+   fprintf(writtenfile, "%s %s %s %d", "We", "are", "in", 2012);
+
+   fclose(writtenfile);
+
+   return(0);
+
+
+}
+*/
+
+
+/*int imageconc()
+{
+
+	//image generator in grayscale
+	int imageconc[100][100][3];
+	double normalizedconc[100][100];
+
+
+
+	FILE* datafile = fopen("imageconc.ppm", "w" )
+							fprintf(datafile,"P3\n#imageconc.ppm\n%d %d\n", ni, nj);
+							fprintf(datafile,"%d\n",255);
+
+
+											for (i=1; i<=ni;i++)
+											{
+												for (j=1; j<=nj; j++)
+												{
+													for (k=1; k <=3; k++)
+													{
+															normalizedconc[i][j] = (nconc[i][j]+1)*255/2; //normalizing values
+															imageconc[i][j][k] = (int)trunc(normalizedconc[i][j]);
+															fprintf(datafile, "%d ", bwpicture[i][j][k]);
+													}
+															fprintf(datafile, "\n");
+												}
+											}
+
+
+
+
+	fclose(datafile);
+	//image generator ends here
+
+}*/
+
+
