@@ -1,0 +1,1512 @@
+//Date of run: Fri Mar 21 13:18:07 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.517803
+Final average of noise: -0.000000
+Final average of conc:  -0.002478
+
+//Date of run: Fri Mar 21 13:18:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.344996
+Final average of noise: -0.000000
+Final average of conc:  0.001787
+
+//Date of run: Fri Mar 21 13:18:50 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.077833
+Final average of noise: 0.000000
+Final average of conc:  -0.010492
+
+//Date of run: Fri Mar 21 13:20:45 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 10000
+Final average of psi:   1.102512
+Final average of noise: -0.000000
+Final average of conc:  0.011585
+
+//Date of run: Fri Mar 21 15:00:31 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.508864
+Final average of noise: 0.000000
+Final average of conc:  -0.003434
+
+//Date of run: Fri Mar 21 15:03:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.508784
+Final average of noise: -0.000000
+Final average of conc:  -0.002291
+
+//Date of run: Fri Mar 21 15:06:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.511250
+Final average of noise: 0.000000
+Final average of conc:  0.004221
+
+//Date of run: Fri Mar 21 15:07:46 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.514672
+Final average of noise: 0.000000
+Final average of conc:  -0.004302
+
+//Date of run: Fri Mar 21 15:09:47 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.514341
+Final average of noise: -0.000000
+Final average of conc:  0.001195
+
+//Date of run: Fri Mar 21 15:10:48 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.509092
+Final average of noise: -0.000000
+Final average of conc:  -0.005831
+
+//Date of run: Fri Mar 21 15:12:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.507341
+Final average of noise: 0.000000
+Final average of conc:  0.002573
+
+//Date of run: Fri Mar 21 15:13:45 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.463459
+Final average of noise: 0.000000
+Final average of conc:  -0.003679
+
+//Date of run: Fri Mar 21 15:15:11 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.510255
+Final average of noise: -0.000000
+Final average of conc:  0.006617
+
+//Date of run: Fri Mar 21 15:15:45 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.505926
+Final average of noise: -0.000000
+Final average of conc:  0.009953
+
+//Date of run: Fri Mar 21 15:16:39 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.511961
+Final average of noise: 0.000000
+Final average of conc:  0.003376
+
+//Date of run: Fri Mar 21 15:21:41 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.509446
+Final average of noise: -0.000000
+Final average of conc:  -0.001011
+
+//Date of run: Fri Mar 21 15:22:21 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.515343
+Final average of noise: -0.000000
+Final average of conc:  -0.009700
+
+//Date of run: Fri Mar 21 15:23:19 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.510094
+Final average of noise: 0.000000
+Final average of conc:  -0.005532
+
+//Date of run: Fri Mar 21 15:24:06 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.512225
+Final average of noise: 0.000000
+Final average of conc:  0.001620
+
+//Date of run: Fri Mar 21 15:25:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.507516
+Final average of noise: -0.000000
+Final average of conc:  0.000481
+
+//Date of run: Fri Mar 21 15:26:38 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.466674
+Final average of noise: 0.000000
+Final average of conc:  0.002876
+
+//Date of run: Fri Mar 21 15:27:23 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.514246
+Final average of noise: 0.000000
+Final average of conc:  0.007629
+
+//Date of run: Fri Mar 21 15:27:35 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.510726
+Final average of noise: -0.000000
+Final average of conc:  -0.002062
+
+//Date of run: Fri Mar 21 15:28:29 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 40
+Final average of psi:   -0.509842
+Final average of noise: -0.000000
+Final average of conc:  -0.004117
+
+//Date of run: Fri Mar 21 15:29:32 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.512543
+Final average of noise: 0.000000
+Final average of conc:  0.008227
+
+//Date of run: Fri Mar 21 15:29:57 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.507742
+Final average of noise: -0.000000
+Final average of conc:  -0.002555
+
+//Date of run: Fri Mar 21 15:30:16 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.523335
+Final average of noise: -0.000000
+Final average of conc:  -0.002623
+
+//Date of run: Fri Mar 21 15:31:41 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.506891
+Final average of noise: 0.000000
+Final average of conc:  0.004275
+
+//Date of run: Fri Mar 21 15:36:50 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.516188
+Final average of noise: -0.000000
+Final average of conc:  0.000264
+
+//Date of run: Fri Mar 21 15:37:59 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.319237
+Final average of noise: 0.000000
+Final average of conc:  -0.000430
+
+//Date of run: Fri Mar 21 15:44:38 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.512111
+Final average of noise: 0.000000
+Final average of conc:  0.005144
+
+//Date of run: Fri Mar 21 15:45:38 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.513325
+Final average of noise: -0.000000
+Final average of conc:  0.000235
+
+//Date of run: Fri Mar 21 15:46:49 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.309577
+Final average of noise: 0.000000
+Final average of conc:  0.002025
+
+//Date of run: Fri Mar 21 15:49:57 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.071599
+Final average of noise: 0.000000
+Final average of conc:  -0.000673
+
+//Date of run: Fri Mar 21 16:04:35 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.335004
+Final average of noise: -0.000000
+Final average of conc:  0.000309
+
+//Date of run: Fri Mar 21 16:07:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.508375
+Final average of noise: -0.000000
+Final average of conc:  -0.003675
+
+//Date of run: Fri Mar 21 16:10:21 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.319148
+Final average of noise: 0.000000
+Final average of conc:  0.003168
+
+//Date of run: Fri Mar 21 16:12:34 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.464869
+Final average of noise: -0.000000
+Final average of conc:  -0.003742
+
+//Date of run: Fri Mar 21 16:21:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.462491
+Final average of noise: -0.000000
+Final average of conc:  0.008937
+
+//Date of run: Fri Mar 21 16:22:54 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.189212
+Final average of noise: 0.000000
+Final average of conc:  -0.003347
+
+//Date of run: Fri Mar 21 16:24:41 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.513594
+Final average of noise: -0.000000
+Final average of conc:  0.003563
+
+//Date of run: Fri Mar 21 16:25:08 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.334650
+Final average of noise: 0.000000
+Final average of conc:  0.004560
+
+//Date of run: Fri Mar 21 16:26:44 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 3000
+Final average of psi:   0.719815
+Final average of noise: 0.000000
+Final average of conc:  0.003445
+
+//Date of run: Fri Mar 21 16:31:46 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.514342
+Final average of noise: 0.000000
+Final average of conc:  0.003271
+
+//Date of run: Fri Mar 21 16:34:32 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.514887
+Final average of noise: 0.000000
+Final average of conc:  -0.005632
+
+//Date of run: Fri Mar 21 16:36:12 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.464003
+Final average of noise: -0.000000
+Final average of conc:  0.001333
+
+//Date of run: Fri Mar 21 16:36:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.151495
+Final average of noise: 0.000000
+Final average of conc:  -0.002386
+
+//Date of run: Fri Mar 21 16:42:23 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.523046
+Final average of noise: 0.000000
+Final average of conc:  0.008921
+
+//Date of run: Fri Mar 21 16:42:46 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.160566
+Final average of noise: -0.000000
+Final average of conc:  0.001006
+
+//Date of run: Fri Mar 21 16:45:31 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.306183
+Final average of noise: 0.000000
+Final average of conc:  0.002523
+
+//Date of run: Fri Mar 21 16:47:33 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2500
+Final average of psi:   0.456771
+Final average of noise: -0.000000
+Final average of conc:  -0.005610
+
+//Date of run: Fri Mar 21 16:49:50 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2500
+Final average of psi:   0.498769
+Final average of noise: -0.000000
+Final average of conc:  -0.001163
+
+//Date of run: Fri Mar 21 16:51:26 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.166960
+Final average of noise: -0.000000
+Final average of conc:  0.003920
+
+//Date of run: Fri Mar 21 16:57:44 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.173722
+Final average of noise: 0.000000
+Final average of conc:  -0.000656
+
+//Date of run: Fri Mar 21 17:02:59 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.322625
+Final average of noise: -0.000000
+Final average of conc:  -0.005477
+
+//Date of run: Fri Mar 21 17:05:35 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.315628
+Final average of noise: 0.000000
+Final average of conc:  0.008313
+
+//Date of run: Fri Mar 21 17:08:33 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.336461
+Final average of noise: -0.000000
+Final average of conc:  0.007098
+
+//Date of run: Fri Mar 21 17:11:57 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.304938
+Final average of noise: -0.000000
+Final average of conc:  -0.004740
+
+//Date of run: Fri Mar 21 17:15:25 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.332555
+Final average of noise: 0.000000
+Final average of conc:  -0.010514
+
+//Date of run: Fri Mar 21 17:18:19 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.510367
+Final average of noise: -0.000000
+Final average of conc:  -0.009238
+
+//Date of run: Fri Mar 21 17:18:33 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.149591
+Final average of noise: 0.000000
+Final average of conc:  0.008175
+
+//Date of run: Fri Mar 21 17:20:00 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.062217
+Final average of noise: 0.000000
+Final average of conc:  -0.006304
+
+//Date of run: Fri Mar 21 17:24:28 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.198903
+Final average of noise: 0.000000
+Final average of conc:  0.012948
+
+//Date of run: Fri Mar 21 17:25:59 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.050853
+Final average of noise: 0.000000
+Final average of conc:  0.000277
+
+//Date of run: Fri Mar 21 17:31:20 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 3000
+Final average of psi:   0.718027
+Final average of noise: -0.000000
+Final average of conc:  0.005057
+
+//Date of run: Fri Mar 21 17:39:18 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.184375
+Final average of noise: -0.000000
+Final average of conc:  0.007750
+
+//Date of run: Fri Mar 21 17:44:14 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.338373
+Final average of noise: -0.000000
+Final average of conc:  -0.004160
+
+//Date of run: Fri Mar 21 17:44:54 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 4000
+Final average of psi:   0.976943
+Final average of noise: -0.000000
+Final average of conc:  0.003992
+
+//Date of run: Fri Mar 21 17:46:37 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.500038
+Final average of noise: -0.000000
+Final average of conc:  -0.001966
+
+//Date of run: Fri Mar 21 17:48:27 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.157910
+Final average of noise: -0.000000
+Final average of conc:  -0.001219
+
+//Date of run: Fri Mar 21 17:49:47 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.344728
+Final average of noise: 0.000000
+Final average of conc:  0.000135
+
+//Date of run: Fri Mar 21 17:50:27 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.067439
+Final average of noise: 0.000000
+Final average of conc:  -0.001577
+
+//Date of run: Fri Mar 21 17:52:18 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 400
+Final average of psi:   -0.493283
+Final average of noise: -0.000000
+Final average of conc:  -0.002840
+
+//Date of run: Fri Mar 21 20:57:46 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 300
+Final average of psi:   -0.501828
+Final average of noise: -0.163038
+Final average of conc:  0.007191
+
+//Date of run: Fri Mar 21 20:58:49 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 10000
+Final average of psi:   1.105198
+Final average of noise: 6.361841
+Final average of conc:  0.073737
+
+//Date of run: Fri Mar 21 22:14:13 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.159601
+Final average of noise: 1.796653
+Final average of conc:  -0.006787
+
+//Date of run: Fri Mar 21 22:17:34 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.176069
+Final average of noise: -1.165726
+Final average of conc:  0.000502
+
+//Date of run: Fri Mar 21 22:20:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.499031
+Final average of noise: 0.000038
+Final average of conc:  0.008170
+
+//Date of run: Fri Mar 21 22:21:14 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.083909
+Final average of noise: -1.594314
+Final average of conc:  0.008391
+
+//Date of run: Fri Mar 21 22:23:14 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.313541
+Final average of noise: 0.188781
+Final average of conc:  -0.004576
+
+//Date of run: Fri Mar 21 22:26:01 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.519250
+Final average of noise: 0.010043
+Final average of conc:  -0.004999
+
+//Date of run: Fri Mar 21 22:26:29 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.315866
+Final average of noise: 0.174195
+Final average of conc:  -0.003668
+
+//Date of run: Fri Mar 21 22:28:55 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1500
+Final average of psi:   -0.098210
+Final average of noise: -0.191266
+Final average of conc:  -0.010081
+
+//Date of run: Fri Mar 21 22:31:13 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.935084
+Final average of noise: 0.000000
+Final average of conc:  0.021124
+
+//Date of run: Fri Mar 21 22:32:21 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.744639
+Final average of noise: 0.225773
+Final average of conc:  0.013736
+
+//Date of run: Fri Mar 21 22:37:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.935086
+Final average of noise: -0.000000
+Final average of conc:  0.010737
+
+//Date of run: Fri Mar 21 22:38:23 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.140826
+Final average of noise: -0.000010
+Final average of conc:  0.226894
+
+//Date of run: Fri Mar 21 22:40:40 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.313515
+Final average of noise: 0.009121
+Final average of conc:  -0.006571
+
+//Date of run: Fri Mar 21 22:42:26 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 3000
+Final average of psi:   0.699264
+Final average of noise: -1.302610
+Final average of conc:  0.006360
+
+//Date of run: Fri Mar 21 22:45:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1500
+Final average of psi:   -0.087309
+Final average of noise: 0.242192
+Final average of conc:  -0.007500
+
+//Date of run: Sat Mar 22 00:38:03 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	0.800
+Number of time steps(nt): 100
+Final average of psi:   -0.514045
+Final average of noise: 0.009122
+Final average of conc:  -0.000244
+
+//Date of run: Sat Mar 22 00:39:29 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	0.500
+Number of time steps(nt): 100
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sat Mar 22 00:41:16 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	0.800
+Number of time steps(nt): 1000
+Final average of psi:   -0.307973
+Final average of noise: -0.745410
+Final average of conc:  0.009405
+
+//Date of run: Fri Mar 28 03:59:48 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   1.076633
+Final average of noise: 3.437176
+Final average of conc:  -0.028012
+
+//Date of run: Fri Mar 28 18:11:04 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 3000
+Final average of psi:   0.842014
+Final average of noise: 0.174597
+Final average of conc:  0.192891
+
+//Date of run: Fri Mar 28 18:14:16 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 200
+Final average of psi:   -0.818488
+Final average of noise: 0.000100
+Final average of conc:  0.019998
+
+//Date of run: Fri Mar 28 18:15:09 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Fri Mar 28 18:19:02 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.790243
+Final average of noise: 0.018009
+Final average of conc:  0.008286
+
+//Date of run: Fri Mar 28 18:20:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.196950
+Final average of noise: -1.537440
+Final average of conc:  0.008456
+
+//Date of run: Fri Mar 28 18:24:13 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Fri Mar 28 18:29:16 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.514530
+Final average of noise: 0.001748
+Final average of conc:  -0.002124
+
+//Date of run: Fri Mar 28 18:31:14 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.465917
+Final average of noise: -0.041783
+Final average of conc:  0.001795
+
+//Date of run: Fri Mar 28 18:32:21 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 200
+Final average of psi:   -0.514142
+Final average of noise: 0.005036
+Final average of conc:  0.000648
+
+//Date of run: Fri Mar 28 18:34:12 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.314012
+Final average of noise: -0.351776
+Final average of conc:  0.006330
+
+//Date of run: Fri Apr 04 21:58:51 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	0.000	-10.000	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.464835
+Final average of noise: -0.051411
+Final average of conc:  -0.002564
+
+//Date of run: Wed Apr 16 20:36:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-1.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 4000
+Final average of psi:   -0.951884
+Final average of noise: -0.088664
+Final average of conc:  0.007768
+
+//Date of run: Wed Apr 16 20:43:12 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-1.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.870431
+Final average of noise: 0.045605
+Final average of conc:  0.050260
+
+//Date of run: Wed Apr 16 20:47:35 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-1.500	1.000	0.125	0.150	0.150	0.020	1.000
+Number of time steps(nt): 200
+Final average of psi:   -0.849463
+Final average of noise: -0.031184
+Final average of conc:  0.049747
+
+//Date of run: Wed Apr 16 20:48:40 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.773891
+Final average of noise: -0.064085
+Final average of conc:  0.049838
+
+//Date of run: Wed Apr 16 20:51:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1500
+Final average of psi:   -0.670445
+Final average of noise: 0.461973
+Final average of conc:  -0.495938
+
+//Date of run: Wed Apr 16 20:57:10 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2
+Final average of psi:   -0.498706
+Final average of noise: 0.000022
+Final average of conc:  -0.499986
+
+//Date of run: Wed Apr 16 20:58:02 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.033792
+Final average of noise: 0.079085
+Final average of conc:  -0.800061
+
+//Date of run: Wed Apr 16 21:03:03 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.501059
+Final average of noise: -0.000009
+Final average of conc:  -0.799999
+
+//Date of run: Wed Apr 16 21:06:07 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2
+Final average of psi:   -0.500736
+Final average of noise: 0.000009
+Final average of conc:  -0.800003
+
+//Date of run: Wed Apr 16 21:10:00 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.499723
+Final average of noise: 0.000002
+Final average of conc:  -0.799991
+
+//Date of run: Wed Apr 16 21:10:18 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   0.040742
+Final average of noise: 0.549753
+Final average of conc:  -0.795085
+
+//Date of run: Wed Apr 16 21:14:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.766243
+Final average of noise: -0.054082
+Final average of conc:  -0.196941
+
+//Date of run: Wed Apr 16 21:16:13 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.717337
+Final average of noise: 0.007805
+Final average of conc:  -0.198977
+
+//Date of run: Wed Apr 16 21:18:03 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.360278
+Final average of noise: 0.503906
+Final average of conc:  -0.457458
+
+//Date of run: Thu Apr 17 14:46:04 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.357257
+Final average of noise: -0.364649
+Final average of conc:  -0.458650
+
+//Date of run: Thu Apr 17 16:00:39 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 10000
+Final average of psi:   0.339162
+Final average of noise: -4.058076
+Final average of conc:  -0.469299
+
+//Date of run: Fri Apr 18 06:25:41 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.649000
+Final average of noise: -0.010683
+Final average of conc:  -0.499394
+
+//Date of run: Fri Apr 18 17:38:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.554444
+Final average of noise: -0.010327
+Final average of conc:  -0.499822
+
+//Date of run: Fri Apr 18 17:38:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.555113
+Final average of noise: -0.004980
+Final average of conc:  -0.499871
+
+//Date of run: Fri Apr 18 17:40:01 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-5.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.555044
+Final average of noise: 0.007106
+Final average of conc:  -0.499980
+
+//Date of run: Sun Apr 20 16:37:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.300	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.977611
+Final average of noise: -0.002836
+Final average of conc:  -0.352195
+
+//Date of run: Sun Apr 20 16:45:14 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.300	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -0.400049
+
+//Date of run: Sun Apr 20 16:48:29 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.300	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 2000
+Final average of psi:   -0.981564
+Final average of noise: -0.015537
+Final average of conc:  -0.387079
+
+//Date of run: Sun Apr 20 16:52:07 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.979750
+Final average of noise: -0.005474
+Final average of conc:  -0.396964
+
+//Date of run: Sun Apr 20 16:53:52 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 1
+Final average of psi:   0.801940
+Final average of noise: 0.000001
+Final average of conc:  -0.399999
+
+//Date of run: Sun Apr 20 16:54:00 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   1.016614
+Final average of noise: 0.006428
+Final average of conc:  -0.399968
+
+//Date of run: Sun Apr 20 16:55:15 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	2.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.010	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.978888
+Final average of noise: 0.003256
+Final average of conc:  -0.399150
+
+//Date of run: Sun Apr 20 20:20:32 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	1.000	1.000	1.000	1.000	0.000	-0.400	1.000	0.125	0.150	0.150	0.050	1.300
+Number of time steps(nt): 1000
+Final average of psi:   -0.968704
+Final average of noise: 0.004080
+Final average of conc:  0.549129
+
+//Date of run: Sun Apr 20 20:24:02 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	1.000	1.000	1.000	1.000	0.000	-0.400	1.000	0.125	0.150	0.150	0.050	1.300
+Number of time steps(nt): 2000
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sun Apr 20 20:29:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	1.000	1.000	1.000	1.000	0.000	-0.400	1.000	0.125	0.150	0.150	0.050	1.300
+Number of time steps(nt): 500
+Final average of psi:   -0.992000
+Final average of noise: -0.002470
+Final average of conc:  -0.002213
+
+//Date of run: Sun Apr 20 20:32:41 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.976396
+Final average of noise: -0.004489
+Final average of conc:  -0.005444
+
+//Date of run: Sun Apr 20 20:39:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+0.600	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 2000
+Final average of psi:   -0.969223
+Final average of noise: -0.018090
+Final average of conc:  -0.007036
+
+//Date of run: Sun Apr 20 20:42:45 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.986118
+Final average of noise: 0.000435
+Final average of conc:  0.001516
+
+//Date of run: Sun Apr 20 20:44:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.962213
+Final average of noise: -0.101088
+Final average of conc:  -0.013346
+
+//Date of run: Sun Apr 20 21:42:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 2000
+Final average of psi:   -0.969019
+Final average of noise: -0.001105
+Final average of conc:  0.014800
+
+//Date of run: Sun Apr 20 21:47:25 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sun Apr 20 21:49:29 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.975836
+Final average of noise: 0.001345
+Final average of conc:  -0.001760
+
+//Date of run: Sun Apr 20 21:51:33 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.986328
+Final average of noise: -0.000268
+Final average of conc:  -0.007280
+
+//Date of run: Sun Apr 20 21:53:25 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.986567
+Final average of noise: 0.000418
+Final average of conc:  0.000404
+
+//Date of run: Sun Apr 20 21:54:36 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 300
+Final average of psi:   -0.989564
+Final average of noise: 0.000395
+Final average of conc:  0.000846
+
+//Date of run: Sun Apr 20 21:55:22 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 200
+Final average of psi:   -0.990473
+Final average of noise: 0.000175
+Final average of conc:  -0.000727
+
+//Date of run: Sun Apr 20 21:56:36 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.990923
+Final average of noise: 0.000023
+Final average of conc:  -0.000313
+
+//Date of run: Sun Apr 20 21:57:05 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.998521
+Final average of noise: -0.000000
+Final average of conc:  0.001175
+
+//Date of run: Sun Apr 20 21:58:15 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.942370
+Final average of noise: -0.128748
+Final average of conc:  -0.017971
+
+//Date of run: Sun Apr 20 22:06:15 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 10000
+Final average of psi:   -0.937997
+Final average of noise: -0.060684
+Final average of conc:  0.028841
+
+//Date of run: Sun Apr 20 22:18:56 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 7500
+Final average of psi:   -0.939945
+Final average of noise: -0.507221
+Final average of conc:  -0.020742
+
+//Date of run: Sun Apr 20 22:29:50 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.957505
+Final average of noise: 0.001982
+Final average of conc:  -0.003206
+
+//Date of run: Sun Apr 20 22:31:42 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 500
+Final average of psi:   -0.968329
+Final average of noise: 0.001449
+Final average of conc:  -0.000233
+
+//Date of run: Sun Apr 20 22:32:40 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.973131
+Final average of noise: 0.000119
+Final average of conc:  -0.001850
+
+//Date of run: Sun Apr 20 22:33:11 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-2.000	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.996722
+Final average of noise: 0.000001
+Final average of conc:  0.001483
+
+//Date of run: Sun Apr 20 22:34:57 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1
+Final average of psi:   0.268705
+Final average of noise: 0.000002
+Final average of conc:  0.611669
+
+//Date of run: Sun Apr 20 22:35:46 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1
+Final average of psi:   -0.983288
+Final average of noise: -0.000000
+Final average of conc:  0.003794
+
+//Date of run: Sun Apr 20 22:37:49 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 500
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sun Apr 20 22:44:32 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sun Apr 20 22:45:40 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 50
+Final average of psi:   -0.975344
+Final average of noise: 0.000002
+Final average of conc:  0.002467
+
+//Date of run: Sun Apr 20 22:48:42 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -1.#IND00
+Final average of noise: -1.#IND00
+Final average of conc:  -1.#IND00
+
+//Date of run: Sun Apr 20 22:49:57 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.974836
+Final average of noise: -0.000113
+Final average of conc:  0.005864
+
+//Date of run: Sun Apr 20 22:52:09 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.974538
+Final average of noise: -0.000253
+Final average of conc:  0.007218
+
+//Date of run: Wed Apr 23 16:44:59 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.974392
+Final average of noise: 0.000077
+Final average of conc:  -0.093081
+
+//Date of run: Wed Apr 23 16:50:30 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 1000
+Final average of psi:   -0.976227
+Final average of noise: -0.007457
+Final average of conc:  -0.004469
+
+//Date of run: Wed Apr 23 16:52:27 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 100
+Final average of psi:   -0.990944
+Final average of noise: -0.000114
+Final average of conc:  0.001062
+
+//Date of run: Wed Apr 23 16:53:39 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 5000
+Final average of psi:   -0.962796
+Final average of noise: 0.043357
+Final average of conc:  -0.010326
+
+//Date of run: Wed Apr 23 17:00:01 2014
+Parameters:
+nmpsi	mconc	r	a	b	w	deltat	kapconc	kappsi	alpha	beta	dtt	dx
+1.000	1.000	1.000	1.000	1.000	-1.000	-0.500	1.000	0.125	0.150	0.150	0.050	1.000
+Number of time steps(nt): 200
+Final average of psi:   -0.990409
+Final average of noise: 0.000069
+Final average of conc:  0.000396
+

@@ -1,0 +1,14 @@
+1.Open the Phase field model Software by double clicking on the file "Model_C.exe"
+2.A command prompt will open up
+3.Input the parameters by pressing "1" for using default parameters (built in the program), Press Enter
+4.Or Input "2" to read the parameters from a file (found in "variables.txt") , Press Enter
+5.Input the Number of iterations (nt or number of time steps), press enter
+6.The code will begin to run.
+7.When the progress bar reaches 100%, the software will write 5 files to the folder.
+	1.finalconc.txt (Data file)
+	2.finalpsi.txt (Datafile)
+	3.imageconc.ppm (image file)
+	4.imagepsi.ppm (image file)
+	5.log.txt (record of program runs) 
+
+Note: The initial condition of the psi and conc matrix can be altered by changing the main code. (Model_C.c)
